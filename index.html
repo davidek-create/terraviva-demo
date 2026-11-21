@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terraviva is a fictional Italian trattoria website demo. Explore its sample menu and visit details.">
+  <title>Terraviva · Italian Trattoria Demo</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="demo-banner">Portfolio demo · Fictional restaurant</div>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">Terraviva<span>ITALIAN TRATTORIA</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A Tuscan-inspired kitchen</p>
+        <h1 id="hero-title">Good food.<br><em>Stay a little.</em></h1>
+        <p class="intro">Hand-cut pasta, slow-simmered ragù, and a table worth lingering at.</p>
+        <a class="cta" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a>
+      </div>
+      <img class="hero-image" src="./pappardelle.jpg" alt="Pappardelle with slow-cooked ragù and shaved Parmesan on a ceramic plate" width="1536" height="1024" fetchpriority="high">
+    </section>
+    <section id="menu" class="wrap menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <p class="eyebrow">Sample menu · Prices in euros</p>
+        <h2 id="menu-title">From our kitchen</h2>
+      </div>
+      <div class="filters" role="group" aria-label="Filter menu by course" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">All dishes</button>
+        <button type="button" data-filter="starters" aria-pressed="false">Starters</button>
+        <button type="button" data-filter="pasta" aria-pressed="false">Pasta</button>
+        <button type="button" data-filter="dessert" aria-pressed="false">Dessert</button>
+      </div>
+      <p class="visually-hidden" id="menu-status" role="status"></p>
+      <ul class="dishes">
+        <li data-course="starters"><div><h3>Burrata e Pomodori</h3><p>Creamy burrata, cherry tomatoes, basil oil.</p></div><span>€12</span></li>
+        <li data-course="starters"><div><h3>Bruschetta ai Funghi</h3><p>Grilled sourdough, wild mushrooms, thyme.</p></div><span>€9</span></li>
+        <li data-course="pasta"><div><h3>Pappardelle al Ragù</h3><p>Hand-cut ribbons, slow-cooked beef, Parmesan.</p></div><span>€19</span></li>
+        <li data-course="pasta"><div><h3>Ravioli Ricotta e Spinaci</h3><p>Ricotta and spinach, browned butter, sage.</p></div><span>€17</span></li>
+        <li data-course="dessert"><div><h3>Tiramisù della Casa</h3><p>Espresso-soaked ladyfingers, mascarpone, cocoa.</p></div><span>€8</span></li>
+        <li data-course="dessert"><div><h3>Panna Cotta al Limone</h3><p>Lemon panna cotta, poached seasonal fruit.</p></div><span>€7</span></li>
+      </ul>
+    </section>
+    <section id="visit" class="visit" aria-labelledby="visit-title">
+      <div class="wrap visit-inner">
+        <div>
+          <p class="eyebrow">Fictional visit details</p>
+          <h2 id="visit-title">Come on in</h2>
+          <p>Example hours and contact details for this portfolio demo.</p>
+        </div>
+        <div>
+          <h3>Find us</h3>
+          <address>12 Olive Lane<br>Example Town<br>hello@terraviva.example</address>
+        </div>
+        <div>
+          <h3>Sample hours</h3>
+          <p>Tue–Fri · 17:00–22:00<br>Sat–Sun · 12:00–22:00<br>Monday · Closed</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>Terraviva · Fictional restaurant demo</span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
